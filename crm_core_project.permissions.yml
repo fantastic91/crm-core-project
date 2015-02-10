@@ -1,0 +1,10 @@
+administer projects:
+  title: 'Administer projects'
+add projects:
+  title: 'Add projects'
+view projects:
+  title: 'View projects'
+edit projects:
+  title: 'Edit projects'
+delete projects:
+  title: 'Delete projects'
