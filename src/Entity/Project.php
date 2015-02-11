@@ -33,6 +33,7 @@ use Drupal\Core\Field\FieldDefinition;
  *     "uuid" = "uuid",
  *     "label" = "title",
  *   },
+ *   field_ui_base_route = "crm_core_project.settings_project",
  *   admin_permission = "administer projects",
  *   links = {
  *     "canonical" = "/admin/content/project/{crm_core_project}",

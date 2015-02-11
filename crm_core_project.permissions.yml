@@ -8,3 +8,5 @@ edit projects:
   title: 'Edit projects'
 delete projects:
   title: 'Delete projects'
+administer project settings:
+  title: 'Administer project settings'

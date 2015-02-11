@@ -26,3 +26,11 @@ entity.crm_core_project.delete_form:
     _entity_form: 'crm_core_project.delete'
   requirements:
     _entity_access: 'crm_core_project.delete'
+
+crm_core_project.settings_project:
+  path: 'admin/config/people/project/settings'
+  defaults:
+    _form: '\Drupal\crm_core_project\Form\ProjectSettingsForm'
+    _title: 'Project'
+  requirements:
+    _permission: 'administer project settings'
