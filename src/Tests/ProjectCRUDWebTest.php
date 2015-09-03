@@ -1,13 +1,12 @@
 <?php
 
-  /**
-   * @file
-   * Contains \Drupal\crm_core_project\Tests\ProjectCRUDWebTest.
-   */
+/**
+ * @file
+ * Contains \Drupal\crm_core_project\Tests\ProjectCRUDWebTest.
+ */
 
 namespace Drupal\crm_core_project\Tests;
 
-use Drupal\crm_core_project\Entity\Project;
 use Drupal\simpletest\WebTestBase;
 
 /**
@@ -16,6 +15,7 @@ use Drupal\simpletest\WebTestBase;
  * @group crm_core
  */
 class ProjectCRUDWebTest extends WebTestBase {
+
   /**
    * Modules to enable.
    *
@@ -25,6 +25,16 @@ class ProjectCRUDWebTest extends WebTestBase {
     'crm_core_project',
     'views',
   );
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setUp() {
+    parent::setUp();
+
+    // Place local actions blocks.
+    $this->drupalPlaceBlock('local_actions_block');
+  }
 
   /**
    * Test basic UI operations with Projects.
@@ -72,4 +82,5 @@ class ProjectCRUDWebTest extends WebTestBase {
     $this->drupalGet('admin/content/project');
     $this->assertText(t('No projects available.'), 'No projects listed.');
   }
+
 }
