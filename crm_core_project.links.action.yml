@@ -1,0 +1,5 @@
+crm_core_project.add_page:
+  route_name: crm_core_project.add
+  title: 'Add project'
+  appears_on:
+    - view.projects.page_1

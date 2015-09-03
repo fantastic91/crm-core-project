@@ -1,0 +1,5 @@
+crm_core_project.project_settings:
+  title: Project settings
+  description: 'Administer your project settings.'
+  parent: user.admin_index
+  route_name: crm_core_project.settings_project

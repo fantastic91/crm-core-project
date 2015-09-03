@@ -1,0 +1,5 @@
+crm_core_project.settings_project:
+  title: Settings
+  description: 'Project settings.'
+  base_route: crm_core_project.settings_project
+  route_name: crm_core_project.settings_project

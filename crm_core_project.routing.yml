@@ -1,0 +1,36 @@
+crm_core_project.add:
+  path: '/admin/content/project/add'
+  defaults:
+    _entity_form: 'crm_core_project.default'
+    _title: 'Add new project'
+  requirements:
+    _permission: 'add projects'
+
+entity.crm_core_project.edit_form:
+  path: '/admin/content/project/{crm_core_project}/edit'
+  defaults:
+    _entity_form: 'crm_core_project.default'
+  requirements:
+    _entity_access: 'crm_core_project.update'
+
+entity.crm_core_project.canonical:
+  path: '/admin/content/project/{crm_core_project}'
+  defaults:
+    _entity_view: 'crm_core_project.default'
+  requirements:
+    _entity_access: 'crm_core_project.view'
+
+entity.crm_core_project.delete_form:
+  path: '/admin/content/project/{crm_core_project}/delete'
+  defaults:
+    _entity_form: 'crm_core_project.delete'
+  requirements:
+    _entity_access: 'crm_core_project.delete'
+
+crm_core_project.settings_project:
+  path: 'admin/config/people/project/settings'
+  defaults:
+    _form: '\Drupal\crm_core_project\Form\ProjectSettingsForm'
+    _title: 'Project'
+  requirements:
+    _permission: 'administer project settings'
